@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="830">
+    <meta name="generator" content="VS code">
+    <title>王者荣耀爱好者网页</title>
+    <link rel="stylesheet" type="text/css" href="CSS/nav.css">
+    <link rel="stylesheet" type="text/css" href="CSS/mainimg.css">
+    <link rel="stylesheet" type="text/css" href="CSS/character.css">
+    <link rel="stylesheet" type="text/css" href="CSS/music.css">
+    <link rel="stylesheet" type="text/css" href="CSS/story.css">
+    <link rel="stylesheet" type="text/css" href="CSS/inscribe.css">
+    <link rel="stylesheet" type="text/css" href="CSS/button.css">
+    <link rel="stylesheet" type="text/css" href="CSS/review.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('fonts/icomoon.eot?r4djxo');
+            src:  url('fonts/icomoon.eot?r4djxo#iefix') format('embedded-opentype'),
+            url('fonts/icomoon.ttf?r4djxo') format('truetype'),
+            url('fonts/icomoon.woff?r4djxo') format('woff'),
+            url('fonts/icomoon.svg?r4djxo#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        .title{
+            color:black;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="D:\王者荣耀网页\image\logo.webp" class="nimg">
+        <a href="#main"><div class="nav1"> 主页</div></a>
+        <a href="#character"><div class="nav1"> 角色</div></a>
+        <a href="#music"><div class="nav1"> 单曲</div></a>
+        <a href="#stroy"><div class="nav1"> 故事</div></a>
+        <a href="#review"><div class="nav1"> 评论</div></a>
+        <div class="searchBox">
+            <input class="search" type="text" name="search">
+        </div>
+        <a href="#"><div class="navs"></div></a>
+        <div class="nav1 nav2" id="time"></div>
+    </div>
+    <div class="mainimg" id="main">
+        <div class="logo"><img src="D:\王者荣耀网页\image\logo.webp" height="250px"></div>
+        <div class="videocontainer">
+            <video class="fullscreenvideo" id="bgvid" playsinline="" autoplay="" muted="" loop="">
+                <source src="video/王者荣耀 冰雪奇缘新赛季 online.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="character" id="character">
+        <div class="title">
+            <strong>游 戏 角 色</strong>
+        </div>
+        <div class="char">
+            <div class="prev">&lt;</div>
+            <div class="next">&gt;</div>
+            <div class="aim">
+                <div class="reader1" id="reader">
+                    <h1>小乔</h1>
+                    <h4>青蛇</h4>
+                    <div class="describe">
+                        <p>“小乔，要努力变强！”</p>
+                        <p>人人都嘲笑她的天真，同情心</p>
+                        <p>以及不切实际的乐观</p>
+                        <p>——直到他们被她强大的法力所震慑。</p>
+                        <p>小乔是一位远程消耗型的法师，</p>
+                        <p>适合走中路。</p>
+                        <p>特长是远程消耗，攻击范围长。</p>
+                    </div>
+                </div>
+                <div class="chara1"><img src="image/player1.png" width="450px" height="450px">
+                </div>
+                <div class="charb1"> 
+                <img src="image/player1b.png" width="450px" height="450px" style="margin-left:100px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="music" id="music">
+        <div class="title">
+            <strong>游 戏 曲 目</strong>
+        </div>
+        <div class="song sp">
+            <div class="songimg" style="background-image: url(image/music1a.jpg);"></div>
+            <div class="songw">
+                <ul>
+                    <li><strong>人鱼之歌</strong></li>
+                    <li>
+                        <audio src="D:\王者荣耀网页\music\music1.mp3" controls></audio>
+                    </li>
+                    <li><strong>歌手:<span style="font-size: 10px;">朵莉亚/海诺</span></strong></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="song">
+            <div class="songimg" style="background-image: url(image/music2a.jpg);"></div>
+            <div class="songw">
+                <ul>
+                    <li><strong>一舞翩翩</strong></li>
+                    <li>
+                        <audio src="D:\王者荣耀网页\music\music2.mp3" controls></audio>
+                    </li>
+                    <li><strong>歌手:<span style="font-size: 13px;">公孙离</span></strong></li>
+                </ul>
+            </div>
+        </div>
+        <div class="song">
+            <div class="songimg" style="background-image: url(image/music3a.png);"></div>
+            <div class="songw">
+                <ul>
+                    <li><strong>音你心动</strong></li>
+                    <li>
+                        <audio src="D:\王者荣耀网页\music\music3.mp3" controls></audio>
+                    </li>
+                    <li><strong>歌手:蔡鹤峰/张千羽</strong></li>
+                </ul>
+            </div>
+        </div>
+        <div class="song">
+            <div class="songimg"  style="background-image: url(image/music4a.jpg);"></div>
+            <div class="songw">
+                <ul>
+                    <li><strong>时之重逢</strong></li>
+                    <li>
+                        <audio src="D:\王者荣耀网页\music\music4.mp3" controls></audio>
+                    </li>
+                    <li><strong>歌手:喵酱油、王者荣耀</strong></li>
+                </ul>
+            </div>
+        </div>
+        <div class="song">
+            <div class="songimg"  style="background-image: url(image/music5a.png);"></div>
+            <div class="songw">
+                <ul>
+                    <li><strong>星穹之声</strong></li>
+                    <li>
+                        <audio src="D:\王者荣耀网页\music\music5.mp3" controls></audio>
+                    </li>
+                    <li><strong>歌手:昭君 /王者荣耀</strong></li>
+                </ul>
+            </div>
+        </div>
+        <div class="song">
+            <div class="songimg"  style="background-image: url(image/music6a.png);"></div>
+            <div class="songw">
+                <ul>
+                    <li><strong>时之奇旅</strong></li>
+                    <li>
+                        <audio src="D:\王者荣耀网页\music\music6.mp3" controls></audio>
+                    </li>
+                    <li><strong>歌手:花泽香菜、王者荣耀</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="stroy" id="stroy">
+        <div class="title">
+            <strong>游 戏 故 事</strong>
+        </div>
+        <div class="stroy1" style="background-image: url(image/sb1.jpg);"></div>
+        <div class="stroy1" style="background-image: url(image/sb2.jpg);"></div>
+        <div class="stroy1" style="background-image: url(image/sb3.jpg);"></div>
+        <div class="stroy1" style="background-image: url(image/sb4.jpg);"></div>
+        <div class="stroy2" style="background-image: url(image/sb5.jpg);"></div>
+        <div class="text1">十步杀一人，千里不留行</div>
+        <div class="text2">天生我才必有用，千金散尽还复来</div> 
+        <div class="text1" style="top:1200px;left:150px;">心怀不惧，方能翱翔于天际</div>
+        <div class="text2" style="top:1200px;left:150px;">不把握住人生的方向盘，那还有什么意义？</div>
+        <div class="text1" style="top:1400px;left:1200px;">生命这样热烈，不投入怎么行</div>
+        <div class="text2" style="top:1400px;left:1200px;">为你呐喊的声音，不因输赢而停止。</div>
+        <div class="stroy2" style="background-image: url(image/sb6.jpg);"></div>
+        <div class="stroy3" style="background-image: url(image/sb7.jpg);"></div>
+    </div>
+    <div class="review" id="review">
+        <div class="title">
+            <strong>评 论 留 言</strong>
+        </div>
+        <div class="area">
+            <textarea class="in" name="in" placeholder="在这里留下你的足迹"></textarea>
+            <div class="contain">0/100字</div>
+            <div class="btn" onclick="add()">回复</div>
+            <div class="view">
+            </div>
+        </div>
+    </div>
+    <div class="inscribe">
+        <img src="image/logo.webp" class="iimg">
+        <div class="writer">MADE BY--830</div>
+        <div class="navd">
+            <a href="#main"> 主页 </a>|
+            <a href="#character"> 角色 </a>|
+            <a href="#music"> 单曲 </a>|
+            <a href="#stroy"> 故事 </a>|
+            <a href="https://pvp.qq.com/" target="_blank"> 评论 </a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/time.js"></script>
+<script type="text/javascript" src="js/list.js"></script>
+<script type="text/javascript" src="js/review.js"></script>
+</html>
